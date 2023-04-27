@@ -120,35 +120,131 @@
 
 // ----TIPOS OBJETO
 // ----mutables
+// let o = {
+//     nombre: "Juan",
+//     "apellido": "Perez",
+//     'nombre completo': "Juan Perez"
+// }
+// function foo(){
+//     // logica
+// }
+
+// console.log(typeof(o))          // object
+// console.log(typeof( [1,2,3] ))  // object
+// console.log(typeof( foo ))      // function
+
+// let objeto = { x: 1 };
+// let copia = objeto;
+// console.log( objeto === copia )
+
+// let m = { x: 1 };
+// let p = { x: 1 };
+// console.log( m === p )
+
+
+// let u = { x: 1 };
+// let v = u;
+// console.log( u === v )
+// console.log(u)
+// console.log(v)
+
+// u.x = 100;
+// console.log(u);
+// console.log(v);
+
+ // ----- prototipos  (algo como la herencia)
+// let objeto = {x: 1}
+// console.log(Object.getPrototypeOf(objeto))
+// ------------------------como crear objetos
+
+// Usando un constructor
+//  let arreglo1 = new Array()
+//  arreglo1[0] = 0;
+//  arreglo1[1] = 1;
+//  arreglo1[2] = 2;
+//  console.log(arreglo1)
+// let arreglo2 = [1,2,3]
+// console.log(arreglo2)
+
+// let fecha = new Date()
+// console.log(fecha)
+// console.log(fecha.toString())
+
+// --- usando Object.create (Definimos el prototipo)
+
+// let x = { a: 1}
+// let y = Object.create(x)  // el prototipo de y es x
+
+// let z = Object.prototype(null)
+
+// --- usando notacion literal
 let o = {
     nombre: "Juan",
-    "apellido": "Perez",
-    'nombre completo': "Juan Perez"
+    apellido: 'Perez',
+    "nombre completo": "Juan perez",
+    edad: 15 + 5,
+    direccion: {
+        calle: "Beni",
+        numero: 54
+    }
 }
-function foo(){
-    // logica
+
+console.log(o)
+
+// Obtener el valor de una propiedad
+console.log('######################', o.nombre)
+console.log('######################', o["nombre completo"])
+console.log('######################', o.edad)
+console.log('######################', o["nombre"])
+console.log('######################', o.direccion.calle)
+// establecer / actualizar  propiedades
+o.nombre = "Pedro";
+console.log('**********************', o)
+o.ci = 7852456;
+console.log('**********************', o)
+ // Eliminar propieades
+ delete(o.apellido)
+ console.log('**********************', o)
+
+ // INSTRUCCIONES
+ // Instruccion bloque
+ {
+    // instrunccion 1;
+    // instrunccion 2;
+    // instrunccion 3;
+ }
+//  INSTRUCCION VACIA
+;
+// INSTRUCCIONES CONDICIONALES
+if( true ){
+
 }
 
-console.log(typeof(o))          // object
-console.log(typeof( [1,2,3] ))  // object
-console.log(typeof( foo ))      // function
+//--------------------------
+if (true) {
+    /*-----------*/
+}else {
+    /***********/
+}
+//--------------------------
+if(true){
 
-let objeto = { x: 1 };
-let copia = objeto;
-console.log( objeto === copia )
+}else if (false){
 
-let m = { x: 1 };
-let p = { x: 1 };
-console.log( m === p )
+}else if(true){
 
+}else{
 
-let u = { x: 1 };
-let v = u;
-console.log( u === v )
-console.log(u)
-console.log(v)
-
-u.x = 100;
-console.log(u);
-console.log(v);
-
+}
+//-------------------------
+switch(2+2){
+    case 1: 
+    //instrucciones;
+    break;
+    case 2:
+    //instrucciones
+    break;
+    default: 
+    //instrucciones
+    break;
+}
