@@ -178,33 +178,33 @@
 // let z = Object.prototype(null)
 
 // --- usando notacion literal
-let o = {
-    nombre: "Juan",
-    apellido: 'Perez',
-    "nombre completo": "Juan perez",
-    edad: 15 + 5,
-    direccion: {
-        calle: "Beni",
-        numero: 54
-    }
-}
+// let o = {
+//     nombre: "Juan",
+//     apellido: 'Perez',
+//     "nombre completo": "Juan perez",
+//     edad: 15 + 5,
+//     direccion: {
+//         calle: "Beni",
+//         numero: 54
+//     }
+// }
 
-console.log(o)
+// console.log(o)
 
 // Obtener el valor de una propiedad
-console.log('######################', o.nombre)
-console.log('######################', o["nombre completo"])
-console.log('######################', o.edad)
-console.log('######################', o["nombre"])
-console.log('######################', o.direccion.calle)
+// console.log('######################', o.nombre)
+// console.log('######################', o["nombre completo"])
+// console.log('######################', o.edad)
+// console.log('######################', o["nombre"])
+// console.log('######################', o.direccion.calle)
 // establecer / actualizar  propiedades
-o.nombre = "Pedro";
-console.log('**********************', o)
-o.ci = 7852456;
-console.log('**********************', o)
+// o.nombre = "Pedro";
+// console.log('**********************', o)
+// o.ci = 7852456;
+// console.log('**********************', o)
  // Eliminar propieades
- delete(o.apellido)
- console.log('**********************', o)
+//  delete(o.apellido)
+//  console.log('**********************', o)
 
  // INSTRUCCIONES
  // Instruccion bloque
@@ -216,35 +216,57 @@ console.log('**********************', o)
 //  INSTRUCCION VACIA
 ;
 // INSTRUCCIONES CONDICIONALES
-if( true ){
+// if( true ){
 
-}
+// }
 
 //--------------------------
-if (true) {
-    /*-----------*/
-}else {
-    /***********/
-}
+// if (true) {
+//     /*-----------*/
+// }else {
+//     /***********/
+// }
 //--------------------------
-if(true){
+// if(true){
 
-}else if (false){
+// }else if (false){
 
-}else if(true){
+// }else if(true){
 
-}else{
+// }else{
 
-}
+// }
 //-------------------------
-switch(2+2){
-    case 1: 
-    //instrucciones;
-    break;
-    case 2:
-    //instrucciones
-    break;
-    default: 
-    //instrucciones
-    break;
+// switch(2+2){
+//     case 1: 
+//     //instrucciones;
+//     break;
+//     case 2:
+//     //instrucciones
+//     break;
+//     default: 
+//     //instrucciones
+//     break;
+// }
+
+// -------------------------------------------------------- INSTRUCCIONES DE REPETICION
+
+// for(let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// let j = 0
+// do{
+//     console.log(j)
+//     j += 1;
+// }while(j < 10);
+
+// let j = 0;
+// while ( j < 10){
+//     console.log(j);
+//     j++;
+// }
+
+for( let e of [10,20,30,40,50]){
+    console.log(e)
 }
